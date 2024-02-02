@@ -24,23 +24,27 @@ def setuser(nacserver, apikey, newuser, newpass):
     req = requests.post(url=url, data=json.dumps(data), headers=headers, verify=False)
     print(req.status_code)
 
-def email(nacserver, apikey):
-    headers = {
-        'Authorization': 'Bearer {}'.format(apikey),
-        'Content-Type': 'application/x-www-form-urlencoded'
-    }
-
-    url = 'https://{}:8443/api/v2/settings/integration/email'.format(nacserver)
-
-    data = {'emailServer': 'nsrelay.ccsd.net', 'emailSender': 'NAC-DoNotReply@nv.ccsd.net'}
-
-    req = requests.post(url=url, data=data, headers=headers, verify=False)
-    print(req.status_code)
 
 if __name__ == '__main__':
-    nacserver = input('Enter NAC Server IP: ')
-    apikey = input('Enter NAC API Key: ')
+    #nac servers and api key need to be set here
+    naclist = [
+        {
+            'ip': '',
+            'key': ''
+        },
+        {
+            'ip': '',
+            'key': ''
+        },
+        {
+            'ip': '',
+            'key': ''
+        }
+    ]
+
     newuser = input('Enter New User Name: ')
     newpass = pwinput.pwinput(prompt='Please enter your New User password: ')
-    setuser(nacserver, apikey, newuser, newpass)
-    email(nacserver, apikey)
+
+    for pod in naclist:
+        setuser(pod['ip'], pod['key'], newuser, newpass)
+

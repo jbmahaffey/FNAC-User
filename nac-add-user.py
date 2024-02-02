@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import ssl, json, requests, pwinput
+import ssl, json, requests, pwinput, yaml
+from yaml.loader import SafeLoader
 
 ssl._create_default_https_context = ssl._create_unverified_context
 requests.packages.urllib3.disable_warnings() 
@@ -21,30 +22,20 @@ def setuser(nacserver, apikey, newuser, newpass):
         'adminUser': True
     }
 
-    req = requests.post(url=url, data=json.dumps(data), headers=headers, verify=False)
-    print(req.status_code)
+    # req = requests.post(url=url, data=json.dumps(data), headers=headers, verify=False)
+    # print(req.status_code)
+    print(headers, url, data)
 
 
 if __name__ == '__main__':
     #nac servers and api key need to be set here
-    naclist = [
-        {
-            'ip': '',
-            'key': ''
-        },
-        {
-            'ip': '',
-            'key': ''
-        },
-        {
-            'ip': '',
-            'key': ''
-        }
-    ]
+    with open('pods.yml', 'r') as pods:
+        naclist = list(yaml.load_all(pods, Loader=SafeLoader))
 
     newuser = input('Enter New User Name: ')
     newpass = pwinput.pwinput(prompt='Please enter your New User password: ')
 
     for pod in naclist:
-        setuser(pod['ip'], pod['key'], newuser, newpass)
+        if pod['ip'] != None:
+            setuser(pod['ip'], pod['key'], newuser, newpass)
 

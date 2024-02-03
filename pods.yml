@@ -1,328 +1,166 @@
-id: 'Pod1'
-ip: '172.16.1.21'
-key:
-
----
-
-id: 'Pod2'
-ip: '172.17.1.21'
-key:
-
----
-
-id: 'Pod3'
-ip: 
-key:
-
----
-
-id: 'Pod4'
-ip: 
-key:
-
----
-
-id: 'Pod5'
-ip: 
-key:
-
----
-
-id: 'Pod6'
-ip: 
-key:
-
----
-
-id: 'Pod7'
-ip: 
-key:
-
----
-
-id: 'Pod8'
-ip: 
-key:
-
----
-
-id: 'Pod9'
-ip: 
-key:
-
----
-
-id: 'Pod10'
-ip: 
-key:
-
----
-
-id: 'Pod11'
-ip: 
-key:
-
----
-
-id: 'Pod12'
-ip: 
-key:
-
----
-
-id: 'Pod13'
-ip: 
-key:
-
----
-
-id: 'Pod14'
-ip: 
-key:
-
----
-
-id: 'Pod15'
-ip: 
-key:
-
----
-
-id: 'Pod16'
-ip: 
-key:
-
----
-
-id: 'Pod17'
-ip: 
-key:
-
----
-
-id: 'Pod18'
-ip: 
-key:
-
----
-
-id: 'Pod19'
-ip: 
-key:
-
----
-
-id: 'Pod20'
-ip: 
-key:
-
----
-
-id: 'Pod21'
-ip: 
-key:
-
----
-
-id: 'Pod22'
-ip: 
-key:
-
----
-
-id: 'Pod23'
-ip: 
-key:
-
----
-
-id: 'Pod24'
-ip: 
-key:
-
----
-
-id: 'Pod25'
-ip: 
-key:
-
----
-
-id: 'Pod26'
-ip: 
-key:
-
----
-
-id: 'Pod27'
-ip: 
-key:
-
----
-
-id: 'Pod28'
-ip: 
-key:
-
----
-
-id: 'Pod29'
-ip: 
-key:
-
----
-
-id: 'Pod30'
-ip: 
-key:
-
----
-
-id: 'Pod31'
-ip: 
-key:
-
----
-
-id: 'Pod32'
-ip: 
-key:
-
----
-
-id: 'Pod33'
-ip: 
-key:
-
----
-
-id: 'Pod34'
-ip: 
-key:
-
----
-
-id: 'Pod35'
-ip: 
-key:
-
----
-
-id: 'Pod36'
-ip: 
-key:
-
----
-
-id: 'Pod37'
-ip: 
-key:
-
----
-
-id: 'Pod38'
-ip: 
-key:
-
----
-
-id: 'Pod39'
-ip: 
-key:
-
----
-
-id: 'Pod40'
-ip: 
-key:
-
----
-
-id: 'Pod41'
-ip: 
-key:
-
----
-
-id: 'Pod42'
-ip: 
-key:
-
----
-
-id: 'Pod43'
-ip: 
-key:
-
----
-
-id: 'Pod44'
-ip: 
-key:
-
----
-
-id: 'Pod45'
-ip: 
-key:
-
----
-
-id: 'Pod46'
-ip: 
-key:
-
----
-
-id: 'Pod47'
-ip: 
-key:
-
----
-
-id: 'Pod48'
-ip: 
-key:
-
----
-
-id: 'Pod49'
-ip: 
-key:
-
----
-
-id: 'Pod50'
-ip: 
-key:
-
----
-
-id: 'Pod51'
-ip: 
-key:
-
----
-
-id: 'Pod52'
-ip: 
-key:
-
----
-
-id: 'Pod53'
-ip: 
-key:
-
----
-
-id: 'Pod54'
-ip: 
-key:
-
----
-
-id: 'Pod55'
-ip: 
-key:
-
+pods:
+  pod1:
+    ip: '172.16.1.21'
+    key: 'adfadfsfa'
+  pod2:
+    ip: '172.17.1.21'
+    key: 'alkjsdf'
+  pod3:
+    ip: 
+    key: 
+  pod4:
+    ip: 
+    key: 
+  pod5:
+    ip: 
+    key: 
+  pod6:
+    ip: 
+    key: 
+  pod7:
+    ip: 
+    key: 
+  pod8:
+    ip: 
+    key: 
+  pod9:
+    ip: 
+    key: 
+  pod10:
+    ip: 
+    key: 
+  pod11:
+    ip: 
+    key: 
+  pod12:
+    ip: 
+    key: 
+  pod13:
+    ip: 
+    key: 
+  pod14:
+    ip: 
+    key: 
+  pod15:
+    ip: 
+    key: 
+  pod16:
+    ip: 
+    key: 
+  pod17:
+    ip: 
+    key: 
+  pod18:
+    ip: 
+    key: 
+  pod19:
+    ip: 
+    key: 
+  pod20:
+    ip: 
+    key: 
+  pod21:
+    ip: 
+    key: 
+  pod22:
+    ip: 
+    key: 
+  pod23:
+    ip: 
+    key: 
+  pod24:
+    ip: 
+    key: 
+  pod25:
+    ip: 
+    key: 
+  pod26:
+    ip: 
+    key: 
+  pod27:
+    ip: 
+    key: 
+  pod28:
+    ip: 
+    key: 
+  pod29:
+    ip: 
+    key: 
+  pod30:
+    ip: 
+    key: 
+  pod31:
+    ip: 
+    key: 
+  pod32:
+    ip: 
+    key: 
+  pod33:
+    ip: 
+    key: 
+  pod34:
+    ip: 
+    key: 
+  pod35:
+    ip: 
+    key: 
+  pod36:
+    ip: 
+    key: 
+  pod37:
+    ip: 
+    key: 
+  pod38:
+    ip: 
+    key: 
+  pod39:
+    ip: 
+    key: 
+  pod40:
+    ip: 
+    key: 
+  pod41:
+    ip: 
+    key: 
+  pod42:
+    ip: 
+    key: 
+  pod43:
+    ip: 
+    key: 
+  pod44:
+    ip: 
+    key: 
+  pod45:
+    ip: 
+    key: 
+  pod46:
+    ip: 
+    key: 
+  pod47:
+    ip: 
+    key: 
+  pod48:
+    ip: 
+    key: 
+  pod49:
+    ip: 
+    key: 
+  pod50:
+    ip: 
+    key: 
+  pod51:
+    ip: 
+    key: 
+  pod52:
+    ip: 
+    key: 
+  pod53:
+    ip: 
+    key: 
+  pod54:
+    ip: 
+    key: 
+  pod55:
+    ip: 
+    key: 

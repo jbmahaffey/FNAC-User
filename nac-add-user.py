@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import ssl, json, requests, pwinput, yaml
+import ssl, json, requests, pwinput, yaml, pprint
 from yaml.loader import SafeLoader
 
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -22,10 +22,8 @@ def setuser(nacserver, apikey, newuser, newpass):
         'adminUser': True
     }
 
-    # req = requests.post(url=url, data=json.dumps(data), headers=headers, verify=False)
-    # print(req.status_code)
-    print(headers, url, data)
-
+    req = requests.post(url=url, data=json.dumps(data), headers=headers, verify=False)
+    print(req.status_code)
 
 if __name__ == '__main__':
     #nac servers and api key need to be set here
@@ -35,7 +33,7 @@ if __name__ == '__main__':
     newuser = input('Enter New User Name: ')
     newpass = pwinput.pwinput(prompt='Please enter your New User password: ')
 
-    for pod in naclist:
-        if pod['ip'] != None:
-            setuser(pod['ip'], pod['key'], newuser, newpass)
-
+    for pods in naclist:
+        for k, v in pods['pods'].items():
+            if v['ip'] != None:
+                setuser(v['ip'], v['key'], newuser, newpass)

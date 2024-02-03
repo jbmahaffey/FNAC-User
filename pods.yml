@@ -1,10 +1,10 @@
 pods:
   pod1:
-    ip: '172.16.1.21'
-    key: 'adfadfsfa'
+    ip: '<Pod IP Address>'
+    key: '<API Key>'
   pod2:
-    ip: '172.17.1.21'
-    key: 'alkjsdf'
+    ip: 
+    key: 
   pod3:
     ip: 
     key: 

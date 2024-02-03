@@ -45,7 +45,7 @@ if __name__ == '__main__':
     fname = input('Enter New Users First Name: ')
     lname = input('Enter New Users Last Name: ')
     email = input('Enter New Users Email Address: ')
-    newuser = input('Enter New User Name: ')
+    newuser = input('Enter New User ID: ')
     newpass = pwinput.pwinput(prompt='Please enter your New User password: ')
     
 

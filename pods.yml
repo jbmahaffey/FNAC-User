@@ -1,3 +1,4 @@
+# Add your pod IP address and API key to each section.
 pods:
   pod1:
     ip: '<Pod IP Address>'

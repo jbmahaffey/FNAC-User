@@ -48,7 +48,6 @@ if __name__ == '__main__':
     newuser = input('Enter New User ID: ')
     newpass = pwinput.pwinput(prompt='Please enter your New User password: ')
     
-
     for pods in naclist:
         for k, v in pods['pods'].items():
             if v['ip'] != None:
